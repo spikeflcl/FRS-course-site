@@ -1,0 +1,154 @@
+<div class="main main--editor-menu mt-52 text-center mt-lg-5">
+  <ul class="d-flex px-0 w-100">
+    <li href="#" class="flex-grow-1 upper-button justify-content-around">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#paper-and-pencil"></use>
+      </svg>
+      <span class="room-button-text">Parametry</span>
+    </li>
+    <li href="#" class="flex-grow-1 upper-button justify-content-between">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#ceiling"></use>
+      </svg>
+      <span class="room-button-text">Sufit</span>
+    </li>
+    <li href="#" class="flex-grow-1 upper-button justify-content-between" aria-current="page">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#walls"></use>
+      </svg>
+      <span class="room-button-text">Ściany</span>
+    </li>
+    <li href="#" class="flex-grow-1 upper-button justify-content-between">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#floor"></use>
+      </svg>
+      <span class="room-button-text">Podłoga</span>
+    </li>
+    <li href="#" class="flex-grow-1 upper-button justify-content-between">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#tv-and-lamp"></use>
+      </svg>
+      <span class="room-button-text">Wyposażenie</span>
+    </li>
+    <li href="#" class="flex-grow-1 upper-button justify-content-between">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#flash"></use>
+      </svg>
+      <span class="room-button-text">Elektryka</span>
+    </li>
+    <li href="#" class="flex-grow-1 upper-button justify-content-between">
+      <svg class="upper-icon-svg">
+        <use xlink:href="#stopcock"></use>
+      </svg>
+      <span class="room-button-text">Hydraulika</span>
+    </li>
+  </ul>
+  <input class="wall-checkbox" type="checkbox" id="same-walls" name="same-walls" class="mt-3">
+  <label class="fs-12 mt-lg-4" for="same-walls">Wszystkie ściany wykończone jednakowo</label>
+  <fieldset class="mt-2 m-auto">
+    <legend class="fs-12 text-center">Wybierz ścianę</legend>
+    <div class="d-flex justify-content-center">
+      <input type="radio" name="format" id="wall-1" value="wall-1" hidden>
+      <label class="wall-button mx-1" for="wall-1">1</label>
+      <input type="radio" name="format" id="wall-2" value="wall-2" hidden>
+      <label class="wall-button mx-1" for="wall-2">2</label>
+      <input type="radio" name="format" id="wall-3" value="wall-3" hidden>
+      <label class="wall-button mx-1" for="wall-3">3</label>
+      <input type="radio" name="format" id="wall-4" value="wall-4" hidden checked>
+      <label class="wall-button mx-1" for="wall-4">4</label>
+      <input type="radio" name="format" id="wall-5" value="wall-5" hidden>
+      <label class="wall-button mx-1" for="wall-5">5</label>
+    </div>
+  </fieldset>
+  <input class="wall-checkbox" type="checkbox" id="double-wall" name="double-wall" class="mt-3" checked>
+  <label class="fs-12 mt-3" for="double-wall">Dwa rodzaje wykończenia na ścianie</label>
+  <div class="position-relative w-160 m-auto mt-2">
+    <label class="h-120 bg-light d-flex justify-content-center align-items-center">
+      <input class="fs-20 border-0 bg-light w-100 text-center input-outline-none text-secondary" type="text" value="1,6 m" inputmode="numeric">
+    </label>
+    <label class="h-40 bg-primary d-flex justify-content-center align-items-center">
+      <input class="fs-20 border-0 bg-primary w-100 text-center input-outline-none text-white" type="text" value="0,6 m" inputmode="numeric">
+    </label>
+    <div class="slider">
+      <svg>
+        <use xlink:href="#arrow-drag"></use>
+      </svg>
+      <div class="arrow-left">
+
+      </div>
+    </div>
+  </div>
+  <fieldset class="d-flex justify-content-center w-90 mx-auto gap-3 mt-3">
+    <input type="radio" name="wall-fragment" id="wall-top" value="wall-top" hidden checked>
+    <label class="wall-fragment d-flex flex-column justify-content-end" for="wall-top"><div></div></label>
+    <input type="radio" name="wall-fragment" id="wall-bottom" value="wall-bottom" hidden>
+    <label class="wall-fragment d-flex flex-column justify-content-start" for="wall-bottom"><div></div></label>
+  </fieldset>
+  <label for="material-select" class="fs-12 mt-2 mb-0">Materiał</label>
+  <select id="material-select" class="form-select material-select text-secondary text-center">
+    <option value="paint" selected>Farba</option>
+    <option value="poster">Tapeta</option>
+    <option value="tiles">Płytki</option>
+    <option value="wood">Drewno</option>
+  </select>
+  <button class="mx-auto w-220 product-select-button text-center border-0 mt-2" type="button">Wybierz produkt</button>
+  <figure class="product-display bg-light d-flex justify-content-between w-220 m-auto mt-2 p-1">
+    <img src="https://picsum.photos/80/80">
+    <div class="d-flex justify-content-between flex-column">
+      <div class="text-start fs-12 mx-2 my-1 text-secondary">TESTOWY PRODUKT</div>
+      <div class="text-end fs-18 mx-1 text-secondary">19,80 <small class="fs-12">zł / l</small></div>
+    </div>
+  </figure>
+  <div class="m-auto accordion accordion-flush mt-3 bg-primary w-lg-480" id="accordionFlushExample">
+    <div class="accordion-item bg-primary">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="rounded-0 h-40 accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <div class="ms-auto me-0"><span class="fs-24">80 zł + 260 zł =&nbsp</span><span class="fs-28">340,00 zł</span></div> 
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <form id="price-calc">
+            <div class="d-flex flex-column align-items-center">
+              <label class="fs-12 d-block text-white" for="top-surface">Powierzchnia górnej połowy ściany</label>
+              <div class="d-flex justify-content-around align-items-end w-200 position-relative">
+                <input class="surface-input text-center bg-light text-secondary" type="text" id="top-surface" name="top-surface" min="0" max="100" inputmode="numeric" required>
+                <span class="required-message">To pole jest wymagane</span>
+                <span class="text-white fs-12 pl-1">m2</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center my-15">
+              <label class="fs-12 d-block text-white" for="top-amount">Ilość materiału</label>
+              <div class="d-flex justify-content-around align-items-end w-200 position-relative">
+                <input class="surface-input text-center bg-light text-secondary" type="text" id="top-amount" name="top-amount" minlength="0" maxlength="10" inputmode="numeric" value="3" required>
+                <span class="required-message">To pole jest wymagane</span>
+                <span class="text-white fs-12 pl-1">szt</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center my-15">
+              <label class="fs-12 d-block text-white" for="bottom-surface">Powierzchnia dolnej połowy ściany</label>
+              <div class="d-flex justify-content-around align-items-end w-200 position-relative">
+                <input class="surface-input text-center bg-light text-secondary" type="text" id="bottom-surface" name="bottom-surface" minlength="0" maxlength="10" inputmode="numeric" required>
+                <span class="required-message">To pole jest wymagane</span>
+                <span class="text-white fs-12 pl-1">m2</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center my-15">
+              <label class="fs-12 d-block text-white" for="bottom-amount">Powierzchnia górnej połowy ściany</label>
+              <div class="d-flex justify-content-around align-items-end w-200 position-relative">
+                <input class="surface-input text-center bg-light text-secondary" type="text" id="bottom-amount" name="bottom-amount" min="0" max="100" inputmode="numeric" value="3" required>
+                <span class="required-message">To pole jest wymagane</span>
+                <span class="text-white fs-12 pl-1">szt</span>
+              </div>  
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row top-button d-flex justify-content-end w-300 m-auto mb-4">
+    <button type="submit" form="price-calc" class="w-auto py-1 px-2 mx-3 mt-2 outline-0 estimate-button">
+      Następny krok
+    </button>
+  </div>
+</div>

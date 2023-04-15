@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%; overflow: hidden;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="overflow: hidden; width: 100%; position: relative;">
+  <%= require('./partials/svg.html').default %>
+  <header>
+    <nav>
+      <div class="d-flex m-0 bg-light">
+        <a type="button" class="border-0 back-button outline-0 d-lg-none">
+          <svg transform="scale(-1,1)" width="1.5em" height="2.5em" class="my-1">
+            <use xlink:href="#arrow-right-bold"></use>
+          </svg>
+        </a>
+        <h1 class="col m-0 text-warning align-self-center fs-16 d-lg-none pl-20">
+          Twoje kosztorysy
+        </h1>
+        <div class="d-flex align-items-center justify-content-center ml-auto">
+          <a type="button" class="outline-0 desktop-button d-none d-lg-block">
+            <svg height="2em" width="1.5em" class="d-none d-lg-block">
+              <use xlink:href="#paper-text-icon"></use>
+            </svg>
+          </a>
+          <a type="button" class="outline-0 desktop-button d-none d-lg-block">
+            <svg height="2em" width="1.5em" class="d-none d-lg-block desktop-icon">
+              <use xlink:href="#interface-icon"></use>
+            </svg>
+          </a>
+          <a type="button" class="outline-0 desktop-button d-none d-lg-block">
+            <svg height="2em" width="1..5em" class="d-none d-lg-block desktop-icon">
+              <use xlink:href="#house-icon"></use>
+            </svg>
+          </a>
+        </div>
+        <%= require('./partials/hamburger-menu.html').default %>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="mx-auto max-w-600 w-auto">
+      <div class="row top-button d-flex justify-content-end">
+        <a type="button" class="w-auto py-1 px-2 mx-3 mt-2 outline-0 estimate-button">
+          Utwórz kosztorys
+        </a>
+      </div>
+      <ul class="my-3 mx-3 list-unstyled">
+        <li class="row bg-light my-1">
+          <span class="col align-self-center text-secondary">Testowy kosztorys 1</span>
+          <a class="col-2 outline-0 trash-button d-flex justify-content-center" type="button">
+            <svg height="2.5em" width="1em">
+              <use xlink:href="#trash-bin"></use>
+            </svg>
+          </a>
+          <a href='/walls.html' class="mw-40 col-1 col-lg-2 outline-0 right-arrow-button" type="button">
+            <span class="d-none d-lg-inline m-1 align-self-center button-text">otwórz</span>
+            <svg class="right-arrow" height="2.5em" width="1em">
+              <use xlink:href="#arrow-right-skinny"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="row bg-light my-2">
+          <span class="col align-self-center text-secondary">Testowy kosztorys 2</span>
+          <a class="col-2 outline-0 trash-button d-flex justify-content-center" type="button">
+            <svg height="2.5em" width="1em">
+              <use xlink:href="#trash-bin"></use>
+            </svg>
+          </a>
+          <a class="mw-40 col-1 col-lg-2 outline-0 right-arrow-button" type="button">
+            <span class="d-none d-lg-inline m-1 align-self-center button-text">otwórz</span>
+            <svg class="right-arrow" height="2.5em" width="1em">
+              <use xlink:href="#arrow-right-skinny"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="row bg-light my-2">
+          <span class="col align-self-center text-secondary">Testowy kosztorys 3</span>
+          <a class="col-2 outline-0 trash-button d-flex justify-content-center" type="button">
+            <svg height="2.5em" width="1em">
+              <use xlink:href="#trash-bin"></use>
+            </svg>
+          </a>
+          <a class="mw-40 col-1 col-lg-2 outline-0 right-arrow-button" type="button">
+            <span class="d-none d-lg-inline m-1 align-self-center button-text">otwórz</span>
+            <svg class="right-arrow" height="2.5em" width="1em">
+              <use xlink:href="#arrow-right-skinny"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

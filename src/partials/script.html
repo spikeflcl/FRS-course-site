@@ -1,0 +1,54 @@
+<script>
+  const roomMenu = document.querySelector('.main--room-menu');
+  const roomEditor = document.querySelector('.main--editor-menu');
+  const roomHeader = document.querySelector('.walls-header');
+  const editorHeader = document.querySelector('.editor-header');
+  const buttons = document.querySelectorAll('.product');
+
+  if (window.innerWidth <= 991) {
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            roomMenu.setAttribute('hidden', '');
+            roomEditor.removeAttribute('hidden');
+            roomHeader.setAttribute('hidden', '');
+            editorHeader.removeAttribute('hidden');
+        });
+    });
+
+    const roomMenuButton = document.querySelector('.button--room-menu');
+    roomMenuButton.addEventListener('click', () => {
+        roomEditor.setAttribute('hidden', '');
+        roomMenu.removeAttribute('hidden');
+        editorHeader.setAttribute('hidden', '');
+        roomHeader.removeAttribute('hidden');
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 991) {
+      roomEditor.removeAttribute('hidden');
+      roomMenu.removeAttribute('hidden')
+      editorHeader.setAttribute('hidden', '');
+      roomHeader.setAttribute('hidden', '');
+    } else {
+      roomMenu.setAttribute('hidden', '');
+      roomEditor.removeAttribute('hidden');
+      roomHeader.setAttribute('hidden', '');
+      editorHeader.removeAttribute('hidden');
+    }
+
+    
+  })
+
+  if(window.innerWidth > 991) {
+    roomEditor.removeAttribute('hidden');
+    roomMenu.removeAttribute('hidden')
+    editorHeader.setAttribute('hidden', '');
+    roomHeader.setAttribute('hidden', '');
+  } else {
+    roomMenu.setAttribute('hidden', '');
+    roomEditor.removeAttribute('hidden');
+    roomHeader.setAttribute('hidden', '');
+    editorHeader.removeAttribute('hidden');
+  }
+</script>

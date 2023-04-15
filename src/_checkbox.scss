@@ -1,0 +1,59 @@
+@use 'variables' as var;
+
+.wall-checkbox:checked,
+.wall-checkbox:not(:checked) {
+  display: none;
+}
+
+.wall-checkbox:checked + label,
+.wall-checkbox:not(:checked) + label
+{
+  position: relative;
+  padding-right: 15px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  user-select: none;
+}
+
+.wall-checkbox:checked + label:before,
+.wall-checkbox:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  right: -25px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var.$secondary;
+  background: var.$white;
+}
+
+.wall-checkbox:checked + label:after,
+.wall-checkbox:not(:checked) + label:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: var.$color-primary;
+  position: absolute;
+  top: 4px;
+  right: -21px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.wall-checkbox:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.wall-checkbox:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.wall-checkbox:checked + label:before {
+  border: 2px solid var.$color-primary;
+}

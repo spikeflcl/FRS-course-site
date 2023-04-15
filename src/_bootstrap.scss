@@ -1,0 +1,2 @@
+@use 'variables' as v;
+@use "../node_modules/bootstrap/scss/bootstrap" with ($spacers: v.$spacers, $primary: v.$primary, $secondary: v.$secondary, $light: v.$light);

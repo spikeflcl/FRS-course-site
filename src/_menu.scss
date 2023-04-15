@@ -1,0 +1,32 @@
+@use 'variables' as var;
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 5px auto;
+  font-size: 18px;
+}
+
+.btn--spacer {
+  display: block;
+  width: 84%;
+  margin: 0 auto;
+  border-top: 2px solid white;
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100vh - 50px);
+    margin: 0;
+    z-index: 1;
+    top: 50px;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.2s transform ease-in-out;
+  }
+}

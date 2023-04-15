@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testowy kosztorys 1</title>
+</head>
+<body>
+  <%= require('./partials/svg.html').default %>
+  <header>
+    <nav class="navigation">
+      <div class="d-flex m-0 bg-light">
+        <a type="button" href="/" class="border-0 button--back outline-0 d-lg-none">
+          <svg transform="scale(-1,1)" width="1.5em" height="2.5em" class="m-0 mt-1">
+            <use xlink:href="#arrow-right-bold"></use>
+          </svg>
+        </a>
+        <%= require('./partials/walls-header.html').default %>
+        <%= require('./partials/editor-header.html').default %>
+        <button type="button" class="outline-0 ml-lg-130 button-walls d-lg-block button--room-menu px-2 ml-130">
+          <svg height="2em" width="1.5em" class="d-lg-block desktop-icon">
+            <use xlink:href="#interface-icon"></use>
+          </svg>
+        </button>
+        <button type="button" class="outline-0 button-walls d-lg-block px-2">
+          <svg height="2em" width="1.5em" class="d-lg-block">
+            <use xlink:href="#paper-text-icon"></use>
+          </svg>
+        </button>
+        <button type="button" class="outline-0 button-walls d-none d-lg-block px-2">
+          <svg height="2em" width="1.5em" class="d-none d-lg-block desktop-icon">
+            <use xlink:href="#house-icon"></use>
+          </svg>
+        </button>
+        <%= require('./partials/hamburger-menu.html').default %>
+      </div>
+    </nav>
+  </header>
+  <main class="wall-screen">
+  <%= require('./partials/room-menu.html').default %>
+  <%= require('./partials/editor-menu.html').default %>
+  <%= require('./partials/script.html').default %>
+  </main>
+</body>
+</html>

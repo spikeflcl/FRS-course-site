@@ -1,0 +1,109 @@
+@use "./variables" as v;
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.mw-40 {
+  min-width: 40px;
+}
+
+.max-w-600 {
+  max-width: 600px;
+}
+
+.outline-0:focus {
+  outline: 0;
+}
+
+.pl-20 {
+  padding-left: v.$spacer;
+}
+
+.mt-52 {
+  margin-top: 52px;
+}
+
+.w-80p {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90px;
+}
+
+.w-160 {
+  width: 160px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-220 {
+  width: 220px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+@media screen and (min-width: 992px) {
+  .w-lg-480 {
+    width: 480px;
+  }   
+
+  .ml-lg-130 {
+    margin-left: 130px;
+  }
+}
+
+.h-35 {
+  height: 35px;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.h-120 {
+  height: 120px;
+}
+
+.h-100vh {
+  height: calc(100vh - 50px);
+}
+
+.input-outline-none:focus {
+  outline: none;
+}
+
+.my-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+

@@ -1,0 +1,19 @@
+$color-primary: #fcc833;
+$color-secondary: #f8f8f8;
+$button-gray: #555;
+$white: #fff;
+$font-family: "Droid Sans", sans-serif;
+
+$spacer: 20px;
+$spacers: (
+0: 0,
+1: $spacer * .25,
+2: $spacer * .5,
+3: $spacer,
+4: $spacer * 1.25,
+5: $spacer * 3,
+);
+
+$primary: #fcc833;
+$secondary: #555;
+$light: #f8f8f8;
