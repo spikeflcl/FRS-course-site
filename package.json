@@ -9,7 +9,7 @@
     "start": "webpack serve --mode=development --open"
   },
   "author": "Łukasz Piwowar",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.2.0",
     "css-loader": "^6.7.1",
